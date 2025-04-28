@@ -4,59 +4,117 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Curuçá em Rede</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Curuçá em Rede">
-    <nav>
-      <a href="#saude">Saúde em Rede</a>
-      <a href="#esportes">Caiu na Rede</a>
-      <a href="#amigos">Rede de Amigos</a>
-      <a href="#editorial">Editorial</a>
-      <a href="#seguranca">Curuçá Segura</a>
-      <a href="#noticias">Rede de Notícias</a>
-      <a href="#direitos">É seu Direito</a>
-      <a href="#solidariedade">Solidariedade</a>
-      <a href="#juventude">Juventude em Rede</a>
-    </nav>
-    <div class="search-box">
-      <input type="text" placeholder="Buscar..." onkeyup="buscarTexto(this.value)" />
+  <header class="topbar">
+    <div class="container">
+      <img src="/logo.png" alt="Curuçá em Rede" class="logo">
+      <nav class="menu">
+        <a href="#saude">Saúde em Rede</a>
+        <a href="#esportes">Caiu na Rede</a>
+        <a href="#amigos">Rede de Amigos</a>
+        <a href="#editorial">Editorial</a>
+        <a href="#seguranca">Curuçá Segura</a>
+        <a href="#noticias">Rede de Notícias</a>
+        <a href="#direitos">É seu Direito</a>
+        <a href="#solidariedade">Solidariedade</a>
+        <a href="#juventude">Juventude em Rede</a>
+      </nav>
+      <div class="search-box">
+        <input type="text" placeholder="Buscar..." onkeyup="buscarTexto(this.value)" />
+      </div>
     </div>
   </header>
 
-  <div class="container">
-    <div class="featured">
-      <h1>Manchete de Destaque: Nova UBS será inaugurada na Vila Curuçá</h1>
-      <p>A comunidade da Vila Curuçá receberá uma nova Unidade Básica de Saúde no próximo mês. A obra, que estava parada desde 2020, foi retomada após pressão da população e acompanhamento do Conselho Municipal de Saúde. A UBS terá capacidade para atender até 20 mil pessoas da região.</p>
-      <img src="https://via.placeholder.com/1200x400.png?text=Nova+UBS+em+Curuçá" alt="Imagem da nova UBS em construção">
+  <main class="container">
+    <section class="featured">
+      <img src="https://via.placeholder.com/1200x400.png?text=Nova+UBS+em+Curuçá" alt="Imagem da nova UBS" class="featured-img">
+      <h1 class="featured-title">Nova UBS será inaugurada na Vila Curuçá</h1>
+      <p class="featured-text">A comunidade da Vila Curuçá receberá uma nova Unidade Básica de Saúde no próximo mês...</p>
       <button class="share-btn" onclick="compartilharWhatsApp()">Compartilhar no WhatsApp</button>
+    </section>
+
+    <section id="saude" class="section">
+      <h2>Saúde em Rede</h2>
+      <div class="card">Conteúdo sobre saúde...</div>
+    </section>
+
+    <section id="esportes" class="section">
+      <h2>Caiu na Rede</h2>
+      <div class="card">Esportes e futebol de várzea...</div>
+    </section>
+
+    <section id="amigos" class="section">
+      <h2>Rede de Amigos</h2>
+      <div class="card">Histórias da população...</div>
+    </section>
+
+    <section id="editorial" class="section">
+      <h2>Editorial</h2>
+      <div class="card">Opiniões e editoriais...</div>
+    </section>
+
+    <section id="seguranca" class="section">
+      <h2>Curuçá Segura</h2>
+      <div class="card">Notícias sobre segurança...</div>
+    </section>
+
+    <section id="noticias" class="section">
+      <h2>Rede de Notícias</h2>
+      <div class="card">Acontecimentos importantes...</div>
+    </section>
+
+    <section id="direitos" class="section">
+      <h2>É seu Direito</h2>
+      <div class="card">Informações sobre cidadania...</div>
+    </section>
+
+    <section id="solidariedade" class="section">
+      <h2>Solidariedade em Rede</h2>
+      <div class="card">Campanhas e boas práticas...</div>
+    </section>
+
+    <section id="juventude" class="section">
+      <h2>Juventude em Rede</h2>
+      <div class="card">Atividades para jovens da região...</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Curuçá em Rede</p>
+      <p>Email: <a href="mailto:curucaemrede@gmail.com">curucaemrede@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/curucaemrede" target="_blank">@curucaemrede</a></p>
+      <div class="footer-icons">
+        <a href="https://wa.me/5511999999999" target="_blank" title="WhatsApp"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+        <a href="https://www.youtube.com/@curucaemrede" target="_blank" title="YouTube"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+        <a href="https://open.spotify.com/show/curucaemrede" target="_blank" title="Podcast"><img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Podcast"></a>
+      </div>
     </div>
+  </footer>
 
-    <section id="saude"><h2>Saúde em Rede</h2><div class="card">Notícia ou conteúdo da área de saúde...</div></section>
-    <section id="esportes"><h2>Caiu na Rede</h2><div class="card">Notícias dos jogos, campeonatos e futebol de várzea...</div></section>
-    <section id="amigos"><h2>Rede de Amigos</h2><div class="card">Histórias de moradores e personagens do bairro...</div></section>
-    <section id="editorial"><h2>Editorial</h2><div class="card">Editorial do mês, opiniões e posicionamentos do jornal...</div></section>
-    <section id="seguranca"><h2>Curuçá Segura</h2><div class="card">Informações sobre segurança pública, conselhos e Conseg...</div></section>
-    <section id="noticias"><h2>Rede de Notícias</h2><div class="card">Acontecimentos importantes, serviços e avisos do bairro...</div></section>
-    <section id="direitos"><h2>É seu Direito</h2><div class="card">Informações sobre direitos, acesso a serviços, cidadania...</div></section>
-    <section id="solidariedade"><h2>Solidariedade em Rede</h2><div class="card">Ações solidárias, campanhas comunitárias, boas práticas...</div></section>
-    <section id="juventude"><h2>Juventude em Rede</h2><div class="card">Iniciativas para jovens da Vila Curuçá...</div></section>
-  </div>
+  <script>
+    function compartilharWhatsApp() {
+      const texto = encodeURIComponent("Confira essa notícia: Nova UBS será inaugurada na Vila Curuçá - https://cesaravleonardo.github.io/curucaemrede/");
+      const url = `https://wa.me/?text=${texto}`;
+      window.open(url, '_blank');
+    }
 
-  <div class="footer">
-    <p>© 2025 Curuçá em Rede</p>
-    <p>Email: <a href="mailto:curucaemrede@gmail.com">curucaemrede@gmail.com</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/curucaemrede" target="_blank">@curucaemrede</a></p>
-    <div class="footer-icons">
-      <a href="https://wa.me/5511999999999" target="_blank" title="WhatsApp"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
-      <a href="https://www.youtube.com/@curucaemrede" target="_blank" title="YouTube"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
-      <a href="https://open.spotify.com/show/curucaemrede" target="_blank" title="Podcast"><img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Podcast"></a>
-    </div>
-  </div>
+    function removerAcentos(texto) {
+      return texto.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    }
 
-  <script src="script.js"></script>
+    function buscarTexto(valor) {
+      const query = removerAcentos(valor);
+      const secoes = document.querySelectorAll(".section");
+      secoes.forEach(secao => {
+        const texto = removerAcentos(secao.innerText);
+        secao.style.display = texto.includes(query) ? "block" : "none";
+      });
+    }
+  </script>
 </body>
 </html>
